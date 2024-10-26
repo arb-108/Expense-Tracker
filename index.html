@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <section class="upper">
+                <h1>Expense Tracker</h1>
+                <div class="balance">
+                    <div class="paisa">
+                    <h2>$</h2>
+                     <h2 id="remainAmount">0</h2>
+                    </div>
+                    <h3>Your Balance</h3>
+                </div>
+            </section>
+            <div class="transaction_container">
+                <h2>Transactions</h2>
+                <hr>
+                <div class="tansactions" id="Transactions">
+                    <!-- <div class="transaction">
+                        <div class="content">
+
+                            <div class="left">
+                                <p>Youtube Income</p>
+                                <p>+$2000</p>
+                            </div>
+                            <div class="status credit">C</div>
+                        </div>
+                        <div class="lower">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="transaction">
+                        <div class="content">
+
+                            <div class="left">
+                                <p>Hostel Dues</p>
+                                <p>-$2000</p>
+                            </div>
+                            <div class="status debit">D</div>
+                        </div>
+                        <div class="lower">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="button_section">
+                <h3>ADD Transaction</h3>
+                <hr>
+                <form action="" class="form" id="form_i">
+                    <div class="inputs">
+                        <div class="inputs-c">
+
+                            <label for="desc">Text</label>
+                            <input type="text" id="desc" required name="description" placeholder="Enter Description">
+                        </div>
+                        <div class="inputs-c">
+    
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" required name="amountadd" placeholder="Enter Amount">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="earning">
+                            <p id="earnP">$0</p>
+                            <p>Earning</p>
+                        </button>
+                        <button id="expense">
+                            <p id="expenseP">$0</p>
+                            <p>Expense</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
